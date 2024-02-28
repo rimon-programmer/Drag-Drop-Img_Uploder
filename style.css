@@ -1,0 +1,108 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+.uploder h2{
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 20px;
+    color: blueviolet;
+    font-weight: bold;
+    transition: all 3s ease;
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -ms-transition: all 3s ease;
+    -o-transition: all 3s ease;
+    animation: animate 4s linear infinite;
+    -webkit-animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    0%{ filter:hue-rotate(0deg) ; -webkit-filter:hue-rotate(0deg) ; }
+    100%{ filter:hue-rotate(360deg) ; -webkit-filter:hue-rotate(360deg) ; }
+}
+.appBody{
+    height: 510px;
+    width: 710px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border: 3px dotted rgb(195, 192, 192);
+    box-shadow: 1px 1px 30px rgb(223, 221, 221);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+} 
+.appBody.active{
+    border: 3px solid green;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+}
+.btnAria{
+    display: flex;
+    justify-content: center;
+}
+.btnAria button{
+    border: none;
+    outline: none;
+    font-size: 25px;
+    color: green;
+    background-color: white;
+}
+.ImgAria{
+    height: 500px;
+    width: 700px;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.uploadImg{
+    height: 500px;
+    width: 700px;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+.uploadImg:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#ReloadBtn{
+    display: none;
+}
